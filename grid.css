@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  a{
+    padding-bottom: 2rem;
+  }
   body {
     background-color: hsl(0, 0%, 95%);
     display: grid;
@@ -15,24 +18,27 @@
     background-color: hsl(0, 0%, 95%);
     border: none;
     border-radius: 24px;
-    padding: 10px 28px;
+    padding: 15px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     font-family: "Lexend Deca", sans-serif;
+  }
+  .card{
+    padding: 4rem;
   }
   main {
     display: grid;
     grid-template-areas:
     'a b c';
     margin: auto;
-    width:50%;
+    width:70%;
   }
   h3 {
     color: hsl(0, 0%, 95%);
     font-family: "Big Shoulders Display", cursive;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding-bottom: 2rem;
   }
   img {
@@ -42,11 +48,11 @@
   p {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: "Lexend Deca", sans-serif;
+    line-height: 1.5;
     padding-bottom: 3rem;
   }
   .first-content {
     background-color: hsl(31, 77%, 52%);
-    padding: 2rem;
     grid-area:a;
   }
   .first-content .button {
@@ -59,7 +65,6 @@
   }
   .second-content {
     background-color: hsl(184, 100%, 22%);
-    padding: 2rem;
     grid-area:b;
   }
   .second-content .button {
@@ -72,7 +77,6 @@
   }
   .third-content {
     background-color: hsl(179, 100%, 13%);
-    padding: 2rem;
     grid-area:c;
   }
   .third-content .button {
@@ -85,5 +89,30 @@
   }
   
   @media (max-width: 375px) {
+    main{
+      display:flex;
+      flex-direction: column;
+      font-size:70%;
+      width: 100%;
+    }
+    .button {
+      padding: 5px 14px;
+      font-size: 9px;
+      font-family: "Lexend Deca", sans-serif;
+    }
+    .card{
+      padding: 1.5rem
+    }
+    h3 {
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+    img {
+      padding-bottom: 0.5rem;
+      width: 20%;
+    }
+    p {
+      padding-bottom: 1.5rem;
+    }
   }
   

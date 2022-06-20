@@ -3,24 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  padding-bottom: 2rem;
+}
 body {
   background-color: hsl(0, 0%, 95%);
-  font-size: 15px;
+  font-size: 100%;
+  list-style: 2;
   max-width: 100vw;
 }
 .button {
   background-color: hsl(0, 0%, 95%);
   border: none;
   border-radius: 24px;
-  padding: 10px 28px;
+  padding: 15px 35px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
 }
-main {
-  width: 50%;
+.main {
+  width: 70%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -28,54 +32,56 @@ main {
   height: 100vh;
 }
 .card {
-  flex-direction: column;
-  padding: 2rem;
-  gap: 1rem;
-  width: 50%;
-
+  padding: 4rem;
+  height:auto;
 }
 h3 {
   color: hsl(0, 0%, 95%);
   font-family: "Big Shoulders Display", cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 2rem;
 }
 img {
   padding-bottom: 2rem;
   width: 30%;
 }
+.grid{
+  padding: 1% 1%;
+}
+.grid .button{
+  background-color: hsl(179, 100%, 13%);
+  color:white;
+}
 p {
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
-  padding-bottom: 3rem;
+  line-height: 1.5;
+  padding-bottom: 5rem;
 }
 .first-content {
   background-color: hsl(31, 77%, 52%);
-  padding: 2rem;
 }
 .first-content .button {
   color: hsl(31, 77%, 52%);
 }
 .first-content a.button:hover {
-  background-color:hsl(31, 77%, 52%);
+  background-color: hsl(31, 77%, 52%);
   color: white;
-  border:2px solid white;
+  border: 2px solid white;
 }
 .second-content {
   background-color: hsl(184, 100%, 22%);
-  padding: 2rem;
 }
 .second-content .button {
   color: hsl(184, 100%, 22%);
 }
 .second-content a.button:hover {
-  background-color:hsl(184, 100%, 22%);
+  background-color: hsl(184, 100%, 22%);
   color: white;
-  border:2px solid white;
+  border: 2px solid white;
 }
 .third-content {
   background-color: hsl(179, 100%, 13%);
-  padding: 2rem;
 }
 .third-content .button {
   color: hsl(179, 100%, 13%);
@@ -83,21 +89,33 @@ p {
 .third-content a.button:hover {
   background-color: hsl(179, 100%, 13%);
   color: white;
-  border:2px solid white;
+  border: 2px solid white;
 }
-@media only screen and (max-width: 1440px) {
+
+@media screen and (max-width: 375px) {
   .main{
     display:flex;
-    flex-direction:column;
-}
-}
-@media (min-width=1378) and (max-width: 375px) {
-  .first-content, .second-content, .third-content{
-    height:400px;
-    width:100%;
+    flex-direction: column;
+    font-size:70%;
+    width: 100%;
   }
-  main{
-    display:flex;
-    flex-direction:row;
+  .button {
+    padding: 5px 14px;
+    font-size: 9px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .card{
+    padding: 1.5rem
+  }
+  h3 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  img {
+    padding-bottom: 0.5rem;
+    width: 20%;
+  }
+  p {
+    padding-bottom: 1.5rem;
   }
 }
